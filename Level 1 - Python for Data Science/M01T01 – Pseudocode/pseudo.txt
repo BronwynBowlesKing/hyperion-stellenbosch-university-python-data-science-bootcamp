@@ -1,0 +1,207 @@
+An algorithm that asks a user to enter a positive number repeatedly until the user enters a zero value, then determines and 
+outputs the largest of the numbers that were entered.
+
+# FIRST ATTEMPT
+request user to enter any positive integer
+while input does not equal zero:
+	store inputs
+if input equals zero:	
+	return input of highest value
+
+# In words, I need to define a function to continually request the user to enter a positive integer value, or they can enter zero if they want to show the highest number they previously entered. I have decided to try to write a function instead and treat it like a game. This is actually like a counter for a high score kept until the player loses. I see that the logic needs to be different. I started with user interaction/what should display on the screen first, without the code to back it. 
+
+# I read on BuiltIn's website: "pseudocode is the ability to represent six programming constructs (always written in uppercase): SEQUENCE, CASE, WHILE, REPEAT-UNTIL, FOR, and IF-THEN-ELSE". I read about this and it is very helpful to know. 
+
+# I looked at PAL's "Pseudocode 101" examples. My code below uses some words from page 2. They use the words like "get" and "display" that I will use as well as Riaan's provided lines. I also recall now learning years ago that ! means "not".
+
+# My friend Petrus pointed out that I did not define max before calling it. I placed it here and made it one million instead of infinity (∞). This is because in the game I am thinking of, no one could get that score.
+
+# SECOND ATTEMPT
+Define function high_score:
+	max = 1000000 
+	GET (first) input = "Enter any positive number or press zero to end the game." # This must be set up to repeat
+		WHILE input != 0 DO:  # It seems Riaan's WHILE loop here does this. This is the same as REPEAT-UNTIL.
+			IF input > max THEN set max = (new) input # Also code from Riaan. Now using IF-THEN-ELSE logic. 
+			ELSE display max
+RUN high_score
+
+
+* This means that if the input is more than (>) the previous maximum value, then overwrite the old maximum with the new one! 
+
+# _____________________________________________________________________________________________________________________________	
+
+An algorithm that requests a user to input their name and then stores their name in a variable called first_name. 
+Subsequently, the algorithm should print out first_name along with the phrase “Hello, World”
+
+# FIRST ATTEMPT
+request user to enter their first name
+store input as first_name
+return first_name and "Hello, World"
+
+# SECOND ATTEMPT
+Define function greeting:
+	GET first_name = "Please tell us your first name."  # This would be the START
+		WHILE first_name ! = an alphabetic entry DO:
+			IF first_name = "Please use only letters of the alphabet." 
+			ELSE display first_name + "Hello, World!" # STOP 
+RUN greeting 
+
+# _____________________________________________________________________________________________________________________________	
+
+An algorithm that reads an arbitrary number of integers and then returns their arithmetic average.
+
+# FIRST ATTEMPT
+inspect all integers 
+add values of all integers together
+divide sum by 2 and store as average
+return average 
+
+# FOR command is needed, which D. Motiso on Indeed writes: "shows a repeating action or a loop. You use the FOR construct to apply instructions in an algorithm to every item in a data set." So FOR is used with maths equations. My answer is modelled on Sefa_Kurtuldu's from StackOverflow although I decided to write it in a way that makes more sense to me.
+
+# SECOND ATTEMPT
+Define function arithmetic_average(numbers):
+	dividend = 0 and divisor = 0  # names from Wikipedia
+	FOR int in numbers:    
+		dividend + int = dividend
+		divisor + 1 = divisor 
+	dividend / divisor = quotient
+	display quotient
+
+RUN arithmetic_average()
+
+# _____________________________________________________________________________________________________________________________	
+
+An algorithm that reads a grocery list and prints out the products (in alphabetical order) that are still left to buy.
+
+# FIRST ATTEMPT
+inspect items on grocerylist
+if item on grocerylist is ticked off:
+	remove item
+else:
+	sort all items on grocerylist from a to z
+return grocerylist
+
+# I found an article by D. Tang on Orient helpful here on programming logic.
+
+# SECOND ATTEMPT
+# In words, I need to define a function to continually request the user to enter a positive integer value, or they can enter zero if they want to show the highest number they previously entered. I have decided to try to write a function instead and treat it like a game. This is actually like a counter for a high score kept until the player loses. I see that the logic needs to be different. I started with user interaction/what should display on the screen first, without the code to back it. 
+
+# I read on BuiltIn's website: "pseudocode is the ability to represent six programming constructs (always written in uppercase): SEQUENCE, CASE, WHILE, REPEAT-UNTIL, FOR, and IF-THEN-ELSE". I read about this and it is very helpful to know. 
+
+# I looked at PAL's "Pseudocode 101" examples. My code below uses some words from page 2. They use the words like "get" and "display" that I will use as well as Riaan's provided lines. I also recall now learning years ago that ! means "not".
+
+# My friend Petrus pointed out that I did not define max before calling it. I placed it here and made it one million instead of infinity (∞). This is because in the game I am thinking of, no one could get that score.
+
+
+Define function high_score:
+	max = 1000000 
+	GET (first) input = "Enter any positive number or press zero to end the game." # This must be set up to repeat
+		WHILE input != 0 DO:  # It seems Riaan's WHILE loop here does this. This is the same as REPEAT-UNTIL.
+			IF input > max THEN set max = (new) input # Also code from Riaan. Now using IF-THEN-ELSE logic. 
+			ELSE display max
+RUN high_score
+
+
+* This means that if the input is more than (>) the previous maximum value, then overwrite the old maximum with the new one! 
+
+# _____________________________________________________________________________________________________________________________	
+
+An algorithm that requests a user to input their name and then stores their name in a variable called first_name. 
+Subsequently, the algorithm should print out first_name along with the phrase “Hello, World”
+
+# FIRST ATTEMPT
+request user to enter their first name
+store input as first_name
+return first_name and "Hello, World"
+
+# SECOND ATTEMPT
+
+Define function greeting:
+	GET first_name = "Please tell us your first name."  # This would be the START
+		WHILE first_name ! = an alphabetic entry DO:
+			IF first_name = "Please use only letters of the alphabet." 
+			ELSE display first_name + "Hello, World!" # STOP 
+RUN greeting 
+
+# _____________________________________________________________________________________________________________________________	
+
+An algorithm that reads an arbitrary number of integers and then returns their arithmetic average.
+
+# FIRST ATTEMPT
+inspect all integers 
+add values of all integers together
+divide sum by 2 and store as average
+return average 
+
+# SECOND ATTEMPT
+
+# FOR command is needed, which D. Motiso on Indeed writes: "shows a repeating action or a loop. You use the FOR construct to apply instructions in an algorithm to every item in a data set." So FOR is used with maths equations. My answer is modelled on Sefa_Kurtuldu's from StackOverflow although I decided to write it in a way that makes more sense to me.
+
+Define function arithmetic_average(numbers):
+	dividend = 0 and divisor = 0  # names from Wikipedia
+	FOR int in numbers:    
+		dividend + int = dividend
+		divisor + 1 = divisor 
+	dividend / divisor = quotient
+	display quotient
+
+RUN arithmetic_average()
+
+# _____________________________________________________________________________________________________________________________	
+
+An algorithm that reads a grocery list and prints out the products (in alphabetical order) that are still left to buy.
+
+# FIRST ATTEMPT
+inspect items on grocerylist
+if item on grocerylist is ticked off:
+	remove item
+else:
+	sort all items on grocerylist from a to z
+return grocerylist
+
+# I found articles by D. Tang on Orient and C. Corginia on Medium helpful here on programming logic and decided to try Boolean options. 
+
+# SECOND ATTEMPT
+Define function groceryapp: 
+	OPEN file grocerylist
+	WHILE str in grocerylist = FALSE:   # FALSE meaning not bought yet. While any str = FALSE, continue to the next line. 
+		DELETE str = TRUE # Remove bought items		
+	SORT str = FALSE in grocerylist (a-z) # Or maybe just str on its own and not = FALSE?
+	print(grocerylist)  
+
+RUN groceryapp
+
+# _____________________________________________________________________________________________________________________________	
+
+An algorithm for the flowchart.
+
+# FIRST ATTEMPT
+read x and y
+add x and y 
+store value as s
+divide s by 2
+store value as a
+multiply x and y
+store value as p
+return s, a, p
+
+# SECOND ATTEMPT
+START
+READ input = float(x, y)
+x + y = s # Do you need to start with known variables, i.e. don't put s first as I have done because we haven't defined it yet or does it not matter? I would usually start with s =
+s / float(2) = a  # Necessary to specify float here and possibly for s and p as well?
+x * y = p
+print(s, a, p)
+STOP
+
+
+References
+
+BuiltIn. 2024. Pseudocode: What It Is and How to Write It. https://builtin.com/data-science/pseudocode
+Indeed. 2025. How To Write Pseudocode (Definition, Components and Pros). https://www.indeed.com/career-advice/career-development/pseudocode
+Medium. 2024. Programming Is All About Logic. https://corgicorporation.medium.com/programming-is-all-about-logic-43021e84092d
+Orient. 2024. Being a Superior Newbie: Learn Programming Logic for Beginners. https://www.orientsoftware.com/blog/programming-logic-for-beginners
+PAL. n.d. Pseudocode 101. https://www.povertyactionlab.org/sites/default/files/research-resources/rr_datacleaning_Pseudocode.pdf
+StackOverflow. 2022. Not getting the correct result for my output in average function. https://stackoverflow.com/questions/74271300/not-getting-the-correct-result-for-my-output-in-average-function
+Wikipedia. 2025. Division. https://en.wikipedia.org/wiki/Division_(mathematics)
+
