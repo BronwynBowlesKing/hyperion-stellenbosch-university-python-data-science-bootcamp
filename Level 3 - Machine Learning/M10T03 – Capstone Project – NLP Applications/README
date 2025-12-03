@@ -1,0 +1,7 @@
+README
+
+This repository contains a Jupyter notebook called 'sentiment_analysis', which performs sentiment analysis on Amazon product reviews. Before running the notebook, you need to unzip the provided dataset. 
+
+The compressed folder zipped_dataset.zip contains the file 'Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products_May19.csv'.
+
+Unzip the dataset by right-clicking on the .zip folder and select 'Extract All', then choose the directory where the unzipped dataset can be saved to. 

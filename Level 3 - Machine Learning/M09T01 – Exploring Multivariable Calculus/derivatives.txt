@@ -1,0 +1,19 @@
+## Practical task 1: Partial and ordinary derivatives
+
+Bronwyn Bowles-King
+
+
+Mathematical derivatives are operations to quantify the rate of change in the output of a function when input variables change. Partial derivatives help us determine how multi-variable functions change when one of the variables is changed while the others do not. Partial derivatives allow us to follow change along separate axes or to focus on a certain variable’s influence.
+
+A real-world example of this is helpful. The temperature in a room can differ depending on where you are standing in a room (which is denoted by x) and how high you are positioned (denoted by y). If you are walking forward or backward (along the x plane), but your height in the room does not change at the same time (y is constant), x is changing and the temperature can change as well. A partial derivative with respect to x can be used to tell us how the temperature changes. In such a case, multiple variables (x and y) are involved, but only one changes at a time.
+
+With ordinary derivatives, the focus is usually on how a function changes with respect to a single variable. For example, an investment can grow at a certain fixed rate over time. In this case, no other variable has an influence except time. This fixed rate tells us how quickly the money increases and it can be calculated with an ordinary derivative. All change in this case is attributed to one variable. 
+
+
+### References
+
+CueMath. (n.d.). Derivatives. https://www.cuemath.com/calculus/derivatives
+
+*Encyclopaedia Britannica.* (2025). derivative. https://www.britannica.com/science/derivative-mathematics
+
+HyperionDev. (2025). Exploring Multivariable Calculus. Private repository, GitHub.
